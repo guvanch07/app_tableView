@@ -16,6 +16,7 @@
 		FADB21B528513C0500464F0F /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB21B428513C0500464F0F /* EmojiTableViewController.swift */; };
 		FADB4F19285408C60015EC78 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4F18285408C60015EC78 /* EmojiTableViewCell.swift */; };
 		FADB4F1B285411B60015EC78 /* emojiModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4F1A285411B60015EC78 /* emojiModelData.swift */; };
+		FAF5A21E2861054D0072BD15 /* NewEmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5A21D2861054D0072BD15 /* NewEmojiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FADB21B428513C0500464F0F /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 		FADB4F18285408C60015EC78 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
 		FADB4F1A285411B60015EC78 /* emojiModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojiModelData.swift; sourceTree = "<group>"; };
+		FAF5A21D2861054D0072BD15 /* NewEmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmojiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				FADB21B428513C0500464F0F /* EmojiTableViewController.swift */,
 				FADB4F1A285411B60015EC78 /* emojiModelData.swift */,
 				FA04A4D2284FE84C00403173 /* Main.storyboard */,
+				FAF5A21D2861054D0072BD15 /* NewEmojiTableViewController.swift */,
 				FADB4F18285408C60015EC78 /* EmojiTableViewCell.swift */,
 				FA04A4D5284FE84F00403173 /* Assets.xcassets */,
 				FA04A4D7284FE84F00403173 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				FA04A4D1284FE84C00403173 /* ViewController.swift in Sources */,
 				FADB4F19285408C60015EC78 /* EmojiTableViewCell.swift in Sources */,
 				FA04A4CD284FE84C00403173 /* AppDelegate.swift in Sources */,
+				FAF5A21E2861054D0072BD15 /* NewEmojiTableViewController.swift in Sources */,
 				FADB4F1B285411B60015EC78 /* emojiModelData.swift in Sources */,
 				FA04A4CF284FE84C00403173 /* SceneDelegate.swift in Sources */,
 			);
