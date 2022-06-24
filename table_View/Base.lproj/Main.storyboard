@@ -106,6 +106,9 @@
                                                     <rect key="frame" x="16" y="0.0" width="382" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingChanged" id="vtn-XP-VbB"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -131,6 +134,9 @@
                                                     <rect key="frame" x="16" y="0.0" width="382" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingChanged" id="MVU-rY-2e5"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -156,6 +162,9 @@
                                                     <rect key="frame" x="16" y="0.0" width="382" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingDidEnd" id="jmg-qC-Lv7"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -175,19 +184,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xTp-JI-1Dr">
-                        <barButtonItem key="leftBarButtonItem" title="back" style="plain" id="fNk-cG-Hfn">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="RCA-3v-mKb">
-                                <rect key="frame" x="-33" y="-15" width="92" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="cancel" id="hVW-im-Zkr"/>
+                        <barButtonItem key="rightBarButtonItem" title="save" id="Bzm-hc-pxL"/>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTx" destination="TZ4-E3-bIw" id="F7D-Uh-baM"/>
                         <outlet property="emojoTx" destination="bnt-r9-9fN" id="zka-vH-R5y"/>
                         <outlet property="nameTx" destination="mJB-gy-zh6" id="Onx-X0-eg0"/>
+                        <outlet property="saveButton" destination="Bzm-hc-pxL" id="ylp-Xl-aS8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcs-ib-KHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
