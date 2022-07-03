@@ -35,14 +35,17 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="yFf-Vo-sBI">
                                                     <rect key="frame" x="33" y="0.0" width="349" height="47"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Smile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjV-UO-pnL">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjV-UO-pnL">
                                                             <rect key="frame" x="0.0" y="0.0" width="349" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Keep smiling every day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6T-ve-0V6">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep smiling every day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6T-ve-0V6">
                                                             <rect key="frame" x="0.0" y="33.5" width="349" height="13.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="13.5" id="dEH-12-C8a"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -107,7 +110,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingChanged" id="vtn-XP-VbB"/>
+                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingChanged" id="aoP-Hi-y9R"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -135,7 +138,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingChanged" id="MVU-rY-2e5"/>
+                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingChanged" id="v1O-r6-js5"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -163,7 +166,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingDidEnd" id="jmg-qC-Lv7"/>
+                                                        <action selector="textChanged:" destination="k6p-hU-ZgY" eventType="editingChanged" id="D6a-CB-L0l"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -184,17 +187,26 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xTp-JI-1Dr">
-                        <barButtonItem key="leftBarButtonItem" title="cancel" id="hVW-im-Zkr"/>
-                        <barButtonItem key="rightBarButtonItem" title="save" id="Bzm-hc-pxL"/>
+                        <barButtonItem key="leftBarButtonItem" title="cancel" id="hVW-im-Zkr">
+                            <connections>
+                                <segue destination="7g5-Ia-bMM" kind="unwind" unwindAction="unwindSequeWithSegue:" id="TP9-Zh-6Wr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="save" id="Bzm-hc-pxL">
+                            <connections>
+                                <segue destination="7g5-Ia-bMM" kind="unwind" identifier="saveSegue" unwindAction="unwindSequeWithSegue:" id="SIm-13-qVF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descriptionTx" destination="TZ4-E3-bIw" id="F7D-Uh-baM"/>
-                        <outlet property="emojoTx" destination="bnt-r9-9fN" id="zka-vH-R5y"/>
-                        <outlet property="nameTx" destination="mJB-gy-zh6" id="Onx-X0-eg0"/>
-                        <outlet property="saveButton" destination="Bzm-hc-pxL" id="ylp-Xl-aS8"/>
+                        <outlet property="descriptionTx" destination="TZ4-E3-bIw" id="NjF-l0-134"/>
+                        <outlet property="emojiTx" destination="bnt-r9-9fN" id="xIz-ps-LXZ"/>
+                        <outlet property="nameTx" destination="F1z-Vo-UxO" id="zQi-zf-1Le"/>
+                        <outlet property="saveButton" destination="Bzm-hc-pxL" id="Dd0-bE-ZFK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcs-ib-KHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7g5-Ia-bMM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2623.1884057971015" y="134.59821428571428"/>
         </scene>
